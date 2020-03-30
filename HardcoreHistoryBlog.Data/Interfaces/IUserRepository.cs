@@ -9,7 +9,7 @@ namespace HardcoreHistoryBlog.Domain.Interfaces
 {
     public interface IUserRepository : IBaseRepository<ApplicationUser>
     {
-        void GetUsers();
+        List<ApplicationUser> GetUsers();
         void AddUser(ApplicationUser user);
         List<ApplicationRole> AllRoles();
         ApplicationRole GetRole(string id);

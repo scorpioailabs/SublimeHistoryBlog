@@ -8,8 +8,8 @@ namespace HardcoreHistoryBlog.Domain.Domain.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        public string FirstName { get; internal set; }
-        public string LastName { get; internal set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
         public virtual ICollection<IdentityUserToken<string>> Tokens { get; set; }

@@ -15,10 +15,6 @@ namespace HardcoreHistoryBlog.Infrastructure.Context
        {
        }
 
-        public ApplicationDbContext(DbContextOptions options) : base(options)
-        {
-        }
-
         public virtual DbSet<ApplicationUser> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<MainComment> MainComments { get; set; }

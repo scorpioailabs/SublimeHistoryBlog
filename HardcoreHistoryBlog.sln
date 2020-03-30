@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistoryBlog.Infrast
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistory.Client.Shared", "HardcoreHistory.Client\Shared\HardcoreHistory.Client.Shared.csproj", "{27202C41-BC08-4BDC-910F-65764A251E4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardcoreHistory.Blazor", "HardcoreHistory.Blazor\HardcoreHistory.Blazor.csproj", "{32482933-2F13-434B-8C4D-FDEE54073CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardcoreHistory.Blazor.Client", "HardcoreHistory.Blazor.Client\HardcoreHistory.Blazor.Client.csproj", "{04465509-A030-464F-814E-ACCDBEB6293A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{27202C41-BC08-4BDC-910F-65764A251E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27202C41-BC08-4BDC-910F-65764A251E4A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{27202C41-BC08-4BDC-910F-65764A251E4A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{32482933-2F13-434B-8C4D-FDEE54073CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32482933-2F13-434B-8C4D-FDEE54073CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32482933-2F13-434B-8C4D-FDEE54073CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32482933-2F13-434B-8C4D-FDEE54073CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04465509-A030-464F-814E-ACCDBEB6293A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04465509-A030-464F-814E-ACCDBEB6293A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04465509-A030-464F-814E-ACCDBEB6293A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04465509-A030-464F-814E-ACCDBEB6293A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
