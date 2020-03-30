@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
+using HardcoreHistory.Client.Shared.Common;
 using HardcoreHistoryBlog.Domain.Interfaces;
 using HardcoreHistoryBlog.Infrastructure.Context;
-using HardcoreHistoryBlog.Shared.Common;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

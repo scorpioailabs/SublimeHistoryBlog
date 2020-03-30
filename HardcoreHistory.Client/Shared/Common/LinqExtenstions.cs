@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace HardcoreHistoryBlog.Shared.Common
+namespace HardcoreHistory.Client.Shared.Common
 {
     public static class LinqExtensions
     {

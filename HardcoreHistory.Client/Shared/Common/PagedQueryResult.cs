@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HardcoreHistoryBlog.Shared.Common
+namespace HardcoreHistory.Client.Shared.Common
 {
     public class PagedQueryResult<T>
     {

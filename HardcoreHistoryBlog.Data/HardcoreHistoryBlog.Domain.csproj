@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HardcoreHistoryBlog.Shared\HardcoreHistoryBlog.Shared.csproj" />
+    <ProjectReference Include="..\HardcoreHistory.Client\Shared\HardcoreHistory.Client.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using HardcoreHistoryBlog.Shared.Common;
+﻿using HardcoreHistory.Client.Shared;
+using HardcoreHistory.Client.Shared.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
