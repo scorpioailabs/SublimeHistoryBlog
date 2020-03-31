@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace HardcoreHistoryBlog.Infrastructure.Migrations
+namespace HardcoreHistory.Infrastructure.Migrations
 {
     public partial class init : Migration
     {

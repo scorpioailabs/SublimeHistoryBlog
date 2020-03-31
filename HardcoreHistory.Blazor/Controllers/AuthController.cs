@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HardcoreHistory.Blazor.ViewModels;
-using HardcoreHistoryBlog.Domain.Domain.Models;
+using HardcoreHistory.Blazor.Client.ViewModels;
+using HardcoreHistory.Client.Shared.Domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

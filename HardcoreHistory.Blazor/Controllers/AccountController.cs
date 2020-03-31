@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using AutoMapper;
 using HardcoreHistory.Blazor.Services;
-using HardcoreHistory.Blazor.ViewModels;
-using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
-using HardcoreHistoryBlog.Domain.Interfaces;
+using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
+using HardcoreHistory.Client.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using HardcoreHistory.Blazor.Client.ViewModels;
 
 namespace HardcoreHistory.Blazor.Controllers
 {

@@ -1,13 +1,13 @@
-﻿using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
-using HardcoreHistoryBlog.Infrastructure.Context;
+﻿using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
+using HardcoreHistory.Infrastructure.Context;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HardcoreHistoryBlog.Infrastructure
+namespace HardcoreHistory.Infrastructure
 {
     public class DbSeeder
     {

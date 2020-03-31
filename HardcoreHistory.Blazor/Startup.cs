@@ -12,14 +12,19 @@ using Microsoft.Extensions.Hosting;
 using HardcoreHistory.Blazor.Areas.Identity;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
-using HardcoreHistoryBlog.Infrastructure.Context;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
-using HardcoreHistoryBlog.Domain.Domain.Models;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
+using HardcoreHistory.Client.Shared.Domain;
 using Microsoft.Extensions.Logging;
-using HardcoreHistoryBlog.Infrastructure;
 using Microsoft.AspNetCore.ResponseCompression;
 using System.Net.Mime;
 using System.Linq;
+using AutoMapper;
+using HardcoreHistory.Client.Interfaces.Base;
+using HardcoreHistory.Client.Interfaces;
+using HardcoreHistory.Infrastructure.Context;
+using HardcoreHistory.Infrastructure.Repositories.Base;
+using HardcoreHistory.Infrastructure;
+using HardcoreHistory.Infrastructure.Repositories;
 
 namespace HardcoreHistory.Blazor
 {
@@ -36,6 +41,13 @@ namespace HardcoreHistory.Blazor
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            var mapperConfig = new AutoMapper.MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new Client.MapperConfiguration());
+            });
+            var mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -45,6 +57,11 @@ namespace HardcoreHistory.Blazor
                 .AddDefaultTokenProviders();
 
             services.AddRazorPages();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(EntityBaseRepository<>));
+            //services.AddTransient<IBlogRepository>();
+            //services.AddTransient<ICommentRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            //services.AddScoped<IFileManager>();
             //services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 

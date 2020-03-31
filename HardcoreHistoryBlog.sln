@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistoryBlog.Domain", "HardcoreHistoryBlog.Data\HardcoreHistoryBlog.Domain.csproj", "{337913BC-A721-4A2F-8171-8CEC7D2E7DFA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistoryBlog.Infrastructure", "HardcoreHistoryBlog.EntityFrameworkCore\HardcoreHistoryBlog.Infrastructure.csproj", "{3A69EA9F-146E-4645-98C0-3F2459A94EE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistory.Infrastructure", "HardcoreHistoryBlog.EntityFrameworkCore\HardcoreHistory.Infrastructure.csproj", "{3A69EA9F-146E-4645-98C0-3F2459A94EE5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistory.Client.Shared", "HardcoreHistory.Client\Shared\HardcoreHistory.Client.Shared.csproj", "{27202C41-BC08-4BDC-910F-65764A251E4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardcoreHistory.Blazor", "HardcoreHistory.Blazor\HardcoreHistory.Blazor.csproj", "{32482933-2F13-434B-8C4D-FDEE54073CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistory.Blazor", "HardcoreHistory.Blazor\HardcoreHistory.Blazor.csproj", "{32482933-2F13-434B-8C4D-FDEE54073CCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardcoreHistory.Blazor.Client", "HardcoreHistory.Blazor.Client\HardcoreHistory.Blazor.Client.csproj", "{04465509-A030-464F-814E-ACCDBEB6293A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcoreHistory.Blazor.Client", "HardcoreHistory.Blazor.Client\HardcoreHistory.Blazor.Client.csproj", "{04465509-A030-464F-814E-ACCDBEB6293A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{337913BC-A721-4A2F-8171-8CEC7D2E7DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{337913BC-A721-4A2F-8171-8CEC7D2E7DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{337913BC-A721-4A2F-8171-8CEC7D2E7DFA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{337913BC-A721-4A2F-8171-8CEC7D2E7DFA}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{3A69EA9F-146E-4645-98C0-3F2459A94EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A69EA9F-146E-4645-98C0-3F2459A94EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A69EA9F-146E-4645-98C0-3F2459A94EE5}.Release|Any CPU.ActiveCfg = Debug|Any CPU

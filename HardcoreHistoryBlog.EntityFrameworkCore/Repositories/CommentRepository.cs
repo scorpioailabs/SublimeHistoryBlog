@@ -1,14 +1,16 @@
 ﻿using AutoMapper;
-using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Interfaces.Base;
-using HardcoreHistoryBlog.Infrastructure.Context;
-using HardcoreHistoryBlog.Infrastructure.Repositories.Base;
+using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Interfaces.Base;
+using HardcoreHistory.Infrastructure.Context;
+using HardcoreHistory.Infrastructure.Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using HardcoreHistory.Client.Shared.Common;
+using HardcoreHistory.Client.Interfaces;
 
-namespace HardcoreHistoryBlog.Infrastructure.Repositories
+namespace HardcoreHistory.Infrastructure.Repositories
 {
     public class CommentRepository : EntityBaseRepository<Comment>, ICommentRepository
     {
@@ -18,6 +20,16 @@ namespace HardcoreHistoryBlog.Infrastructure.Repositories
         }
 
         public void AddSubComment(SubComment comment)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PagedQueryResult<Comment>> PagedQueryAsync(IQuerySpecification<Comment> specification)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Comment>> QueryAsync(IQuerySpecification<Comment> specification)
         {
             throw new NotImplementedException();
         }

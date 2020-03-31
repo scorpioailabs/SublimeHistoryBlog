@@ -1,14 +1,20 @@
-﻿<div class="user-info">
+﻿@using Microsoft.AspNetCore.Identity
+@using HardcoreHistory.Client.Shared.Domain
+@using HardcoreHistory.Client.Shared.Domain.IdentityModels
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="user-info">
     <AuthorizeView>
         <Authorized>
-            <a href="Identity/Account/Manage">Hello, @context.User.Identity.Name!</a>
-            <form method="post" action="Identity/Account/LogOut">
+            <a href="Account/Index">Hello, @context.User.Identity.Name!</a>
+            <form method="post" action="Auth/LogOut">
                 <button type="submit" class="nav-link btn btn-link">Log out</button>
             </form>
         </Authorized>
         <NotAuthorized>
-            <a href="Identity/Account/Register">Register</a>
-            <a href="Identity/Account/Login">Log in</a>
+            <a href="Account/Register">Register</a>
+            <a href="Auth/Login">Log in</a>
         </NotAuthorized>
     </AuthorizeView>
 </div>

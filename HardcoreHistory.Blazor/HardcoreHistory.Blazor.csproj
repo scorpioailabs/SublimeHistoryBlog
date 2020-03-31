@@ -30,7 +30,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HardcoreHistory.Blazor.Client\HardcoreHistory.Blazor.Client.csproj" />
-    <ProjectReference Include="..\HardcoreHistoryBlog.EntityFrameworkCore\HardcoreHistoryBlog.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HardcoreHistory.Client.Shared">
+      <HintPath>..\HardcoreHistory.Client\Shared\bin\Debug\netstandard2.1\HardcoreHistory.Client.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="HardcoreHistory.Infrastructure">
+      <HintPath>..\HardcoreHistoryBlog.EntityFrameworkCore\bin\Debug\netcoreapp3.1\HardcoreHistory.Infrastructure.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

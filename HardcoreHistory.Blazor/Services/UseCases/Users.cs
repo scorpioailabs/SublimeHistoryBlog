@@ -4,13 +4,14 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
-using HardcoreHistory.Blazor.ViewModels;
-using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
-using HardcoreHistoryBlog.Domain.Interfaces;
+using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using HardcoreHistory.Client.Shared.Interfaces;
+using HardcoreHistory.Blazor.Client.ViewModels;
+using HardcoreHistory.Client.Interfaces;
 
 namespace HardcoreHistory.Blazor.Services
 {

@@ -1,14 +1,15 @@
 ﻿using AutoMapper;
-using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Interfaces;
-using HardcoreHistoryBlog.Infrastructure.Context;
-using HardcoreHistoryBlog.Infrastructure.Repositories.Base;
+using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Interfaces;
+using HardcoreHistory.Infrastructure.Context;
+using HardcoreHistory.Infrastructure.Repositories.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using HardcoreHistory.Client.Shared.Common;
 
-namespace HardcoreHistoryBlog.Infrastructure.Repositories
+namespace HardcoreHistory.Infrastructure.Repositories
 {
     public class BlogRepository : EntityBaseRepository<Post>, IBlogRepository
     {
@@ -33,6 +34,16 @@ namespace HardcoreHistoryBlog.Infrastructure.Repositories
         }
 
         public Post GetPost(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<PagedQueryResult<Post>> PagedQueryAsync(IQuerySpecification<Post> specification)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Post>> QueryAsync(IQuerySpecification<Post> specification)
         {
             throw new NotImplementedException();
         }

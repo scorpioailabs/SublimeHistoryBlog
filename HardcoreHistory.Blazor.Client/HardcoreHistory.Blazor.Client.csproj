@@ -13,9 +13,18 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0-preview3.20168.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0-preview3.20168.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview3.20168.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\HardcoreHistory.Client\Shared\HardcoreHistory.Client.Shared.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HardcoreHistoryBlog.Shared">
+      <HintPath>..\HardcoreHistoryBlog.Shared\bin\Debug\netstandard2.0\HardcoreHistoryBlog.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

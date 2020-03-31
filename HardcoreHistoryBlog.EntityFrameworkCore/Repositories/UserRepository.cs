@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
-using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
-using HardcoreHistoryBlog.Domain.Interfaces;
-using HardcoreHistoryBlog.Infrastructure.Context;
-using HardcoreHistoryBlog.Infrastructure.Repositories.Base;
+using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
+using HardcoreHistory.Infrastructure.Context;
+using HardcoreHistory.Infrastructure.Repositories.Base;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,8 +10,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HardcoreHistory.Client.Shared.Interfaces;
+using HardcoreHistory.Client.Interfaces;
 
-namespace HardcoreHistoryBlog.Infrastructure.Repositories
+namespace HardcoreHistory.Infrastructure.Repositories
 {
     public class UserRepository : EntityBaseRepository<ApplicationUser>, IUserRepository
     {

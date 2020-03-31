@@ -1,10 +1,10 @@
-﻿using HardcoreHistoryBlog.Domain.Domain.Models;
-using HardcoreHistoryBlog.Domain.Domain.Models.IdentityModels;
+﻿using HardcoreHistory.Client.Shared.Domain;
+using HardcoreHistory.Client.Shared.Domain.IdentityModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace HardcoreHistoryBlog.Infrastructure.Context
+namespace HardcoreHistory.Infrastructure.Context
 {
     public class ApplicationDbContext : IdentityDbContext<
                 ApplicationUser, ApplicationRole, string,

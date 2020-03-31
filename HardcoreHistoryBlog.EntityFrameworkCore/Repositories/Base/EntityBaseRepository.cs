@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
+using HardcoreHistory.Client.Interfaces;
 using HardcoreHistory.Client.Shared.Common;
-using HardcoreHistoryBlog.Domain.Interfaces;
-using HardcoreHistoryBlog.Infrastructure.Context;
+using HardcoreHistory.Client.Shared.Interfaces;
+using HardcoreHistory.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -9,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HardcoreHistoryBlog.Infrastructure.Repositories.Base
+namespace HardcoreHistory.Infrastructure.Repositories.Base
 {
     public class EntityBaseRepository<T> where T : class
     {
